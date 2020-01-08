@@ -1,0 +1,10 @@
+mixin pagination(page, pages, count)
+  .pagination
+    .pagination__prev
+        form.prev(method="POST" )
+          button(type="submit") Back
+    .pagination__text
+      p Page #{page} of #{pages} — #{count} total results
+    .pagination__next
+        form.next(method="POST" )
+          button(type="submit") Next
